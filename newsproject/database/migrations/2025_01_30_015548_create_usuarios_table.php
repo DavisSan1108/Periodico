@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->string('password');
             $table->string('foto_perfil')->nullable();
             $table->boolean('email_verificado')->default(false);
+            $table->string('rol')->default('usuario');
             $table->timestamps();
         });
     }

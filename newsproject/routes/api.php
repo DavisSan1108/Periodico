@@ -15,6 +15,7 @@ use App\Http\Controllers\SuscripcionController;
 Route::get('/usuarios', [UserController::class, 'index']);
 Route::get('/usuarios/{id}', [UserController::class, 'show']);
 Route::post('/usuarios', [UserController::class, 'store']);
+Route::delete('/usuarios/{id}', [UserController::class, 'destroy']);
 Route::get('/redactores', [RedactorController::class, 'index']);
 Route::get('/redactores/{id}', [RedactorController::class, 'show']);
 Route::post('/redactores', [RedactorController::class, 'store']);
